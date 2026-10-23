@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: #0b0c0e;
+  --color-foreground: #f4f5f7;
+}
+
+@layer components {
+  /* Mangled class prefixes for isolated lightweight styling */
+  .p8k-wrap {
+    min-height: 100vh;
+    background-color: #0b0c0e;
+    color: #f4f5f7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  .p8k-btn-primary {
+    background-color: #f5a623;
+    color: #1a1a1a;
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
+  }
+  .p8k-btn-primary:hover {
+    background-color: #ffb732;
+    transform: translateY(-1px);
+  }
+
+  .p8k-btn-secondary {
+    background-color: #1a1b1f;
+    color: #f4f5f7;
+    transition: all 0.15s ease-in-out;
+  }
+  .p8k-btn-secondary:hover {
+    background-color: #26272c;
+  }
+
+  .p8k-rail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: #8b8e99;
+    transition: all 0.15s ease;
+  }
+  .p8k-rail-item:hover {
+    color: #ffffff;
+    background-color: #1a1b1f;
+  }
+
+  .p8k-live-card {
+    background: linear-gradient(180deg, #16171b 0%, #111215 100%);
+    border: 1px solid #23252b;
+  }
+
+  .p8k-text-content h2 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-top: 2rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #23252b;
+  }
+
+  .p8k-text-content p {
+    color: #b1b5c2;
+    line-height: 1.78;
+    margin-bottom: 1.25rem;
+    font-size: 0.98rem;
+  }
+
+  .p8k-text-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #b1b5c2;
+    line-height: 1.7;
+  }
+
+  .p8k-text-content li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* Pure CSS drawer pattern */
+  #mobile-menu:target {
+    display: block !important;
+  }
+  #mobile-menu:target ~ #mobile-scrim {
+    display: block !important;
+  }
+}
