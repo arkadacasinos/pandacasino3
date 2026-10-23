@@ -9,6 +9,7 @@ export default function RootLayout({
   return (
     <html lang="ru" className="bg-[#0b0c0e]">
       <head>
+        <meta name="yandex-verification" content="b1236c6afa7605f7" />
         <meta charSet="utf-8" />
         <title>Panda Casino официальный сайт — играть онлайн в Панда Казино зеркало</title>
         <meta
